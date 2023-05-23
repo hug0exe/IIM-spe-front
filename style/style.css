@@ -93,19 +93,7 @@
   margin: 0 5% 0 5%;
 }
 
-@keyframes glowing {
-  0% {
-    text-shadow: 0 0 5px #fff;
-  }
-  50% {
-    text-shadow: 0 0 20px #ff0, 0 0 30px #ff0;
-  }
-  100% {
-    text-shadow: 0 0 5px #fff;
-  }
-}
 .text1, .text2 {
-  animation: glowing 2s infinite;
   font-family: "HKGroteskWide", sans-serif;
 }
 

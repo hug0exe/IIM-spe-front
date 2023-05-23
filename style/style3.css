@@ -1,3 +1,15 @@
+@font-face {
+  font-family: Remboy;
+  src: url("../public/RemboyRegular.ttf") format("truetype");
+}
+@font-face {
+  font-family: HKGroteskWide;
+  src: url("../public/HKGroteskWide-Regular.ttf") format("truetype");
+}
+h1 {
+  font-family: "HKGroteskWide", sans-serif;
+}
+
 .cursor {
   position: fixed;
   width: 25px;
@@ -150,7 +162,7 @@
   z-index: 0;
 }
 .page-three .left-side .letter-image:hover .animated-mail .letter {
-  height: 180px;
+  height: 980px;
 }
 .page-three .left-side .contact-button {
   position: absolute;
@@ -160,11 +172,21 @@
   padding: 20px 40px;
   width: 18vw;
   border-radius: 12px;
-  list-style-type: circle;
-  transition: 0.6s;
+  list-style: none;
 }
-.page-three .left-side ul:hover {
-  background: #fff;
+.page-three .left-side ul li {
+  transition: 0.3s;
+}
+.page-three .left-side ul li:hover {
+  color: #fff;
+}
+.page-three .left-side ul li i {
+  padding-right: 10px;
+  transition: 0.3s;
+  color: #000000;
+}
+.page-three .left-side ul li i:hover {
+  transform: rotate(45deg);
 }
 .page-three .title {
   font-size: 56px;
@@ -185,17 +207,20 @@
   line-height: 1;
   margin: 0;
   color: #000000;
+  font-family: "Remboy", sans-serif;
 }
 .page-three .summary-items-container .summary-item h3 {
   line-height: 1;
   font-size: 36px;
   margin: 0;
   color: #000000;
+  font-family: "HKGroteskWide", sans-serif;
 }
 .page-three .summary-items-container .summary-item p {
   line-height: 1;
   font-size: 18px;
   margin: 0;
+  font-family: "HKGroteskWide", sans-serif;
 }
 .page-three .summary-items-container .summary-item:nth-child(1) {
   grid-column: 1/2;

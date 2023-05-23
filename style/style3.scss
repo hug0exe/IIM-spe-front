@@ -3,6 +3,19 @@ $main-color: #000000;
 $secondary-color: #000000;
 $white: #fff;
 
+@font-face {
+  font-family: Remboy;
+  src: url('../public/RemboyRegular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: HKGroteskWide;
+  src: url('../public/HKGroteskWide-Regular.ttf') format('truetype');
+}
+
+h1{
+  font-family: 'HKGroteskWide', sans-serif;
+}
 // custom cursor style
 .cursor {
   position: fixed;
@@ -175,7 +188,7 @@ $white: #fff;
       }
 
       .animated-mail .letter {
-        height: 180px;
+        height: 980px;
       }
     }
     .contact-button {
@@ -186,10 +199,24 @@ $white: #fff;
       padding: 20px 40px;
       width: 18vw;
       border-radius: 12px;
-      list-style-type: circle;
-      transition: 0.6s;
-      &:hover {
-        background: $white;
+      list-style: none;
+      // transition: 0.6s;
+      // &:hover {
+      //   background: $white;
+      // }
+      li{
+        transition: 0.3s;
+        &:hover{
+          color: $white;    
+        }
+        i{
+          padding-right: 10px;
+          transition: 0.3s;
+          color: $main-color; 
+          &:hover{
+            transform: rotate(45deg);
+          }
+        }
       }
     }
   }
@@ -210,17 +237,20 @@ $white: #fff;
         line-height: 1;
         margin: 0;
         color: $main-color;
+        font-family: 'Remboy', sans-serif;
       }
       h3 {
         line-height: 1;
         font-size: 36px;
         margin: 0;
         color: $secondary-color;
+        font-family: 'HKGroteskWide', sans-serif;
       }
       p {
         line-height: 1;
         font-size: 18px;
         margin: 0;
+        font-family: 'HKGroteskWide', sans-serif;
       }
     }
     .summary-item:nth-child(1) {
