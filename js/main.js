@@ -260,3 +260,16 @@
 
 // // Render app
 // ReactDOM.render(<App />, document.getElementById("app"));
+
+
+let myDiv = document.getElementById('audio');
+let mySound = document.getElementById('mySound');
+
+myDiv.addEventListener('mouseover', function() {
+    mySound.play();
+});
+
+myDiv.addEventListener('mouseout', function() {
+    mySound.pause();
+    mySound.currentTime = 0; // This resets the sound
+});

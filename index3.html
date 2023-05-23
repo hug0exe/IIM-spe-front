@@ -15,8 +15,8 @@
     <div class="page-three">
       <div class="left-side">
         <h1 class="title cursor-scale">CONTENU</h1>
-
-        <div class="letter-image">
+        <div class="letter-image" id="myDiv">
+          <audio id="mySound" src="./music/cartoon-scream-1-6835.mp3" preload="auto"></audio>
           <button class="animated-mail">
             <div class="back-fold"></div>
             <div class="letter">
@@ -76,6 +76,19 @@
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script>
+      let myDiv = document.getElementById('myDiv');
+      let mySound = document.getElementById('mySound');
+  
+      myDiv.addEventListener('mouseover', function() {
+          mySound.play();
+      });
+  
+      myDiv.addEventListener('mouseout', function() {
+          mySound.pause();
+          mySound.currentTime = 0; // This resets the sound
+      });
+  </script>
     <script>
       let cursor = document.querySelector(".cursor");
       let cursorScale = document.querySelectorAll(".cursor-scale");
