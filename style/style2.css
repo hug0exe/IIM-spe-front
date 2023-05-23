@@ -1,0 +1,141 @@
+body {
+  background-color: #CEE2C7 !important;
+}
+
+.partH h1 {
+  font-weight: 900 !important;
+}
+.partH p {
+  font-size: 14px;
+  color: #328D2A;
+  font-weight: 100;
+}
+.partH ul {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.partH ul li {
+  list-style-type: none;
+  color: #328D2A;
+  font-weight: 100;
+}
+.partH .bigLine {
+  position: absolute;
+  border-radius: 18px;
+  border-left: 1px solid #328D2A;
+  border-top: 1px solid #328D2A;
+  width: 1140px !important;
+  height: 560px;
+  top: 70px;
+  left: 60px;
+  width: 40px;
+}
+.partH .section2 {
+  margin-bottom: 40px;
+}
+.partH .section2 .mt-5 {
+  margin-top: 4rem !important;
+}
+.partH .section2 h2 {
+  text-align: right;
+  color: #328D2A;
+  margin-right: 22px;
+  font-weight: 900;
+}
+.partH .section2 p {
+  font-size: 13px;
+  font-weight: 100;
+}
+.partH .section2 ul li {
+  text-align: right;
+}
+.partH .section2 h3 {
+  text-align: right;
+  font-size: 22px !important;
+  font-weight: 400;
+  color: #328D2A;
+  text-transform: lowercase;
+}
+.partH .section2 .lineSection3 {
+  position: absolute;
+  width: 59%;
+  height: 1px;
+  justify-content: end;
+  margin-top: -23px;
+  background: #328D2A;
+}
+.partH h3, .partH h2, .partH h1 {
+  color: #328D2A !important;
+}
+.partH h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: right;
+  font-weight: 900;
+}
+.partH .section3 .lineSection3 {
+  position: absolute;
+  width: 70%;
+  height: 1px;
+  margin-top: -43px;
+  background: #328D2A;
+}
+.partH .section3 h2 {
+  font-weight: 900;
+  margin-right: 22px;
+}
+.partH h3 {
+  font-size: 30px !important;
+  text-transform: uppercase;
+}
+.partH .text-right {
+  text-align: right;
+  margin-bottom: 20px;
+}
+.partH .border-left {
+  border-right: 1px solid #328D2A;
+  padding-right: 40px !important;
+}
+.partH img {
+  border-radius: 15px;
+  filter: grayscale(1);
+  margin-top: -10px;
+  margin-left: 50px;
+  height: 295px !important;
+  width: 275px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.partH ul li {
+  text-align: right;
+}
+.partH ul li h4 {
+  font-size: 14px !important;
+  font-weight: 100;
+  margin-bottom: 5px;
+  text-align: right;
+}
+.partH ul li p {
+  font-weight: 400;
+  text-align: right;
+  margin: 0;
+}
+.partH ul li .date {
+  text-align: right !important;
+  font-size: 14px !important;
+}
+.partH .reseaux ul li p {
+  text-align: left;
+}
+.partH .ml-5 {
+  margin-left: 2rem;
+}
+.partH .contact {
+  display: contents;
+}
+.partH .contact .box {
+  margin-top: -60px;
+}
+.partH .contact h3 {
+  font-weight: 900;
+}/*# sourceMappingURL=style2.css.map */
