@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Landing Page with GSAP Animations</title>
+    <link rel="stylesheet" type="text/css" href="style/style3.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="page-three">
+      <div class="left-side">
+        <h1 class="title cursor-scale">CONTENU</h1>
+
+        <div class="letter-image">
+          <button class="animated-mail">
+            <div class="back-fold"></div>
+            <div class="letter">
+              <div class="letter-border"></div>
+              <div class="letter-title"></div>
+              <div class="letter-context"></div>
+              <div>Contact us</div>
+              <div class="letter-stamp">
+                <div class="letter-stamp-inner"></div>
+              </div>
+            </div>
+            <div class="top-fold"></div>
+            <div class="body"></div>
+            <div class="left-fold"></div>
+          </button>
+        </div>
+
+        <ul>
+          <li>projet academique</li>
+          <li>projet personnel</li>
+          <li>projet professionel</li>
+        </ul>
+      </div>
+      <div class="summary-items-container">
+        <div class="summary-item cursor-scale small">
+          <h4>01.</h4>
+          <h3>Diseno <br />Editorial</h3>
+          <p>rediseno de libro <br />folleto</p>
+        </div>
+        <div class="summary-item cursor-scale small">
+          <h4>02.</h4>
+          <h3>Diseno <br />Editorial</h3>
+          <p>rediseno de libro <br />folleto</p>
+        </div>
+        <div class="summary-item cursor-scale small">
+          <h4>03.</h4>
+          <h3>Social <br />Media</h3>
+          <p>
+            agroquibor <br />nimu <br />
+            grafisicion
+          </p>
+        </div>
+        <div class="summary-item cursor-scale small">
+          <h4>04.</h4>
+          <h3>Diseno <br />Editorial</h3>
+          <p>rediseno de libro <br />folleto</p>
+        </div>
+        <div class="summary-item cursor-scale small">
+          <h4>05.</h4>
+          <h3>Diseno <br />Editorial</h3>
+          <p>rediseno de libro <br />folleto</p>
+        </div>
+      </div>
+    </div>
+    <div class="cursor"></div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script>
+      let cursor = document.querySelector(".cursor");
+      let cursorScale = document.querySelectorAll(".cursor-scale");
+      let mouseX = 0;
+      let mouseY = 0;
+
+      gsap.to({}, 0.016, {
+        repeat: -1,
+        onRepeat: function () {
+          gsap.set(cursor, {
+            css: {
+              left: mouseX,
+              top: mouseY,
+            },
+          });
+        },
+      });
+
+      window.addEventListener("mousemove", (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+      });
+      document.querySelector(".summary-item:nth-child(1)").style.transform =
+        "translateX(-" +
+        (50 + mouseX / 200) +
+        "%) translateY(-" +
+        (50 + mouseY / 200) +
+        "%)";
+      cursorScale.forEach((link) => {
+        link.addEventListener("mousemove", () => {
+          cursor.classList.add("grow");
+          if (link.classList.contains("small")) {
+            cursor.classList.remove("grow");
+            cursor.classList.add("grow-small");
+          }
+        });
+
+        link.addEventListener("mouseleave", () => {
+          cursor.classList.remove("grow");
+          cursor.classList.remove("grow-small");
+        });
+      });
+
+      var tl = gsap.timeline();
+      tl.from(document.querySelector(".summary-item:nth-child(1)"), {
+        y: 100,
+        opacity: 0,
+        duration: 0.8,
+      })
+        .from(document.querySelector(".summary-item:nth-child(2)"), {
+          y: 100,
+          opacity: 0,
+          duration: 0.8,
+        })
+        .from(document.querySelector(".summary-item:nth-child(3)"), {
+          y: 100,
+          opacity: 0,
+          duration: 0.8,
+        })
+        .from(document.querySelector(".summary-item:nth-child(4)"), {
+          y: 100,
+          opacity: 0,
+          duration: 0.8,
+        })
+        .from(document.querySelector(".summary-item:nth-child(5)"), {
+          y: 100,
+          opacity: 0,
+          duration: 0.8,
+        })
+        .from(document.querySelector(".letter-image"), {
+          x: -100,
+          opacity: 0,
+          duration: 0.8,
+        });
+    </script>
+  </body>
+</html>
