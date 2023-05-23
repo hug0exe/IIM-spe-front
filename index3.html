@@ -97,12 +97,6 @@
         mouseX = e.clientX;
         mouseY = e.clientY;
       });
-      document.querySelector(".summary-item:nth-child(1)").style.transform =
-        "translateX(-" +
-        (50 + mouseX / 200) +
-        "%) translateY(-" +
-        (50 + mouseY / 200) +
-        "%)";
       cursorScale.forEach((link) => {
         link.addEventListener("mousemove", () => {
           cursor.classList.add("grow");
