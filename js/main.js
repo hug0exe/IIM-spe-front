@@ -282,3 +282,14 @@ myDiv.addEventListener('mouseout', function () {
     mySound.pause();
     mySound.currentTime = 0; // This resets the sound
 });
+let myDiv2 = document.getElementById('myDiv2');
+let mySound2 = document.getElementById('mySound2');
+
+myDiv2.addEventListener('mouseover', function () {
+    mySound2.play();
+});
+
+myDiv2.addEventListener('mouseout', function () {
+    mySound2.pause();
+    mySound2.currentTime = 0; // This resets the sound
+});

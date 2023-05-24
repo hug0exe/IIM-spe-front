@@ -6,6 +6,10 @@
   font-family: HKGroteskWide;
   src: url("../public/HKGroteskWide-Regular.ttf") format("truetype");
 }
+html {
+  scroll-behavior: smooth;
+}
+
 .view1 {
   background-color: #121212;
   height: 110vh;
@@ -92,7 +96,8 @@
   margin: 0 5% 0 5%;
 }
 
-.text1, .text2 {
+.text1,
+.text2 {
   font-family: "HKGroteskWide", sans-serif;
 }
 
@@ -116,7 +121,7 @@ svg {
   margin: 0 auto;
   background: gray;
   position: relative;
-  -ms-mask-image: -webkit-radial-gradient(#BADA55, #BADA55);
+  -ms-mask-image: -webkit-radial-gradient(#bada55, #bada55);
   animation: grow 0.7s 1 ease;
   -webkit-animation: grow 0.7s 1 ease;
   transform-origin: center;
@@ -169,7 +174,7 @@ svg {
   width: 196px;
   height: 260px;
   border-radius: 50%;
-  background: #FFE4BE;
+  background: #ffe4be;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -264,7 +269,7 @@ svg {
   width: 180px;
   height: 0px;
   border-radius: 48px 48px 0 0;
-  background: #FFE4BE;
+  background: #ffe4be;
   position: absolute;
   top: 40px;
   left: 8px;
@@ -279,7 +284,7 @@ svg {
   width: 20px;
   height: 45px;
   opacity: 1;
-  background: #FFE4BE;
+  background: #ffe4be;
   border-top-left-radius: 20px;
   position: absolute;
   left: 50%;
@@ -296,7 +301,7 @@ svg {
 .ear {
   width: 24px;
   height: 35px;
-  background: #FFE4BE;
+  background: #ffe4be;
   border-radius: 12px;
   position: absolute;
   top: 116px;
@@ -384,7 +389,7 @@ svg {
   width: 20px;
   height: 28px;
   border-radius: 10px;
-  background: #328D2A;
+  background: #328d2a;
   position: absolute;
   top: -18px;
   left: 50%;
@@ -424,7 +429,7 @@ svg {
 .triangle-light {
   width: 400px;
   height: 600px;
-  background: #FFFFFF;
+  background: #ffffff;
   opacity: 0.2;
   position: absolute;
   right: -65%;
@@ -453,7 +458,7 @@ svg {
 .music-note {
   position: absolute;
   font-size: 150px;
-  color: #328D2A;
+  color: #328d2a;
   width: 1px;
   left: 50%;
   opacity: 0;
@@ -497,7 +502,7 @@ svg {
 }
 
 .shirt-text:nth-of-type(2) {
-  color: #EF4136;
+  color: #ef4136;
   animation: text-anim 0.7s 3.1s 1 ease;
   -webkit-animation: text-anim 0.7s 3.1s 1 ease;
 }
@@ -754,7 +759,7 @@ svg {
   }
 }
 body {
-  background-color: #FE4F2D !important;
+  background-color: #fe4f2d !important;
   overflow-x: hidden;
 }
 
@@ -763,7 +768,7 @@ body {
 }
 .partH p {
   font-size: 14px;
-  color: #CEE2C7;
+  color: #cee2c7;
   font-weight: 100;
 }
 .partH ul {
@@ -772,7 +777,7 @@ body {
 }
 .partH ul li {
   list-style-type: none;
-  color: #CEE2C7;
+  color: #cee2c7;
   font-weight: 100;
 }
 .partH .bg {
@@ -781,8 +786,8 @@ body {
 .partH .bigLine {
   position: absolute;
   border-radius: 18px;
-  border-left: 1px solid #CEE2C7;
-  border-top: 1px solid #CEE2C7;
+  border-left: 1px solid #cee2c7;
+  border-top: 1px solid #cee2c7;
   width: 1000px !important;
   height: 560px;
   top: 911px;
@@ -798,7 +803,7 @@ body {
 }
 .partH .section2 h2 {
   text-align: right;
-  color: #CEE2C7;
+  color: #cee2c7;
   margin-right: 22px;
   font-weight: 900;
 }
@@ -813,7 +818,7 @@ body {
   text-align: right;
   font-size: 22px !important;
   font-weight: 400;
-  color: #CEE2C7;
+  color: #cee2c7;
   text-transform: lowercase;
 }
 .partH .section2 .lineSection3 {
@@ -822,10 +827,12 @@ body {
   height: 1px;
   justify-content: end;
   margin-top: -23px;
-  background: #CEE2C7;
+  background: #cee2c7;
 }
-.partH h3, .partH h2, .partH h1 {
-  color: #CEE2C7 !important;
+.partH h3,
+.partH h2,
+.partH h1 {
+  color: #cee2c7 !important;
 }
 .partH h2 {
   text-transform: uppercase;
@@ -838,7 +845,7 @@ body {
   width: 70%;
   height: 1px;
   margin-top: -43px;
-  background: #CEE2C7;
+  background: #cee2c7;
 }
 .partH .section3 h2 {
   font-weight: 900;
@@ -853,7 +860,7 @@ body {
   margin-bottom: 20px;
 }
 .partH .border-left {
-  border-right: 1px solid #CEE2C7;
+  border-right: 1px solid #cee2c7;
   padding-right: 40px !important;
 }
 .partH img {
@@ -968,7 +975,7 @@ h1 {
   height: 0;
   border-style: solid;
   border-width: 0 0 100px 200px;
-  border-color: transparent transparent #328D2A transparent;
+  border-color: transparent transparent #328d2a transparent;
   z-index: 2;
 }
 .page-three .left-side .animated-mail .top-fold {
@@ -984,7 +991,7 @@ h1 {
   -moz-transition: transform 0.4s 0.4s, z-index 0.2s 0.4s;
   transform-origin: 50% 0%;
   transition: transform 0.4s 0.4s, z-index 0.2s 0.4s;
-  border-color: #328D2A transparent transparent transparent;
+  border-color: #328d2a transparent transparent transparent;
   z-index: 2;
 }
 .page-three .left-side .animated-mail .back-fold {
@@ -992,7 +999,7 @@ h1 {
   bottom: 0;
   width: 200px;
   height: 100px;
-  background: #328D2A;
+  background: #328d2a;
   z-index: 0;
 }
 .page-three .left-side .animated-mail .left-fold {
@@ -1002,7 +1009,7 @@ h1 {
   height: 0;
   border-style: solid;
   border-width: 50px 0 50px 100px;
-  border-color: transparent transparent transparent #328D2A;
+  border-color: transparent transparent transparent #328d2a;
   z-index: 2;
 }
 .page-three .left-side .animated-mail .letter {
@@ -1019,21 +1026,21 @@ h1 {
 .page-three .left-side .animated-mail .letter .letter-border {
   height: 10px;
   width: 100%;
-  background: repeating-linear-gradient(-45deg, #328D2A, #328D2A 8px, transparent 8px, transparent 18px);
+  background: repeating-linear-gradient(-45deg, #328d2a, #328d2a 8px, transparent 8px, transparent 18px);
 }
 .page-three .left-side .animated-mail .letter .letter-title {
   margin-top: 10px;
   margin-left: 5px;
   height: 10px;
   width: 40%;
-  background: #328D2A;
+  background: #328d2a;
 }
 .page-three .left-side .animated-mail .letter .letter-context {
   margin-top: 10px;
   margin-left: 5px;
   height: 10px;
   width: 20%;
-  background: #328D2A;
+  background: #328d2a;
 }
 .page-three .left-side .animated-mail .letter .letter-stamp {
   margin-top: 30px;
@@ -1041,7 +1048,7 @@ h1 {
   border-radius: 100%;
   height: 30px;
   width: 30px;
-  background: #328D2A;
+  background: #328d2a;
   opacity: 0.3;
 }
 .page-three .left-side .letter-image:hover .animated-mail {
@@ -1254,6 +1261,17 @@ h1 {
   transition: all 0.2s;
 }
 
+.line {
+  height: 100%;
+  width: 8px;
+  margin: 0 0 10px 0;
+  position: absolute;
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  left: 0;
+  top: 0;
+}
+
 .photo-container img {
   max-width: 100%;
   position: relative;
@@ -1269,7 +1287,7 @@ h1 {
   text-decoration: none;
   display: block;
   width: 75%;
-  border: solid 4px #2980B9;
+  border: solid 4px #2980b9;
   text-align: center;
   padding: 20px 0;
   margin: 0.6em 0;
@@ -1281,8 +1299,8 @@ h1 {
 }
 
 .button:hover {
-  background: #045AAF;
-  border-color: #266FC6;
+  background: #045aaf;
+  border-color: #266fc6;
 }
 
 /*****PHOT OVERLAY*******/
