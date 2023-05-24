@@ -41,7 +41,7 @@
 .mainTitle h1 {
   width: 10%;
   font-size: 120px;
-  margin: 75px 0 0 125px;
+  margin: 75px 0 0 0;
   font-family: "Remboy", sans-serif;
   transform: scale(0.94);
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
@@ -753,7 +753,7 @@ svg {
   }
 }
 body {
-  background-color: black !important;
+  background-color: #FE4F2D !important;
   overflow-x: hidden;
 }
 
@@ -762,7 +762,7 @@ body {
 }
 .partH p {
   font-size: 14px;
-  color: white;
+  color: #CEE2C7;
   font-weight: 100;
 }
 .partH ul {
@@ -771,7 +771,7 @@ body {
 }
 .partH ul li {
   list-style-type: none;
-  color: white;
+  color: #CEE2C7;
   font-weight: 100;
 }
 .partH .bg {
@@ -780,11 +780,11 @@ body {
 .partH .bigLine {
   position: absolute;
   border-radius: 18px;
-  border-left: 1px solid white;
-  border-top: 1px solid white;
-  width: 1140px !important;
+  border-left: 1px solid #CEE2C7;
+  border-top: 1px solid #CEE2C7;
+  width: 1000px !important;
   height: 560px;
-  top: 70px;
+  top: 911px;
   left: 60px;
   z-index: -100;
   width: 40px;
@@ -797,7 +797,7 @@ body {
 }
 .partH .section2 h2 {
   text-align: right;
-  color: white;
+  color: #CEE2C7;
   margin-right: 22px;
   font-weight: 900;
 }
@@ -812,7 +812,7 @@ body {
   text-align: right;
   font-size: 22px !important;
   font-weight: 400;
-  color: white;
+  color: #CEE2C7;
   text-transform: lowercase;
 }
 .partH .section2 .lineSection3 {
@@ -821,10 +821,10 @@ body {
   height: 1px;
   justify-content: end;
   margin-top: -23px;
-  background: white;
+  background: #CEE2C7;
 }
 .partH h3, .partH h2, .partH h1 {
-  color: white !important;
+  color: #CEE2C7 !important;
 }
 .partH h2 {
   text-transform: uppercase;
@@ -837,7 +837,7 @@ body {
   width: 70%;
   height: 1px;
   margin-top: -43px;
-  background: white;
+  background: #CEE2C7;
 }
 .partH .section3 h2 {
   font-weight: 900;
@@ -852,7 +852,7 @@ body {
   margin-bottom: 20px;
 }
 .partH .border-left {
-  border-right: 1px solid white;
+  border-right: 1px solid #CEE2C7;
   padding-right: 40px !important;
 }
 .partH img {
@@ -882,6 +882,9 @@ body {
 .partH ul li .date {
   text-align: right !important;
   font-size: 14px !important;
+}
+.partH .reseaux ul li i {
+  margin-right: 10px;
 }
 .partH .reseaux ul li p {
   text-align: left;

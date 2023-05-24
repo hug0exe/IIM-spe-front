@@ -270,3 +270,15 @@ let mm = new MagnetMouse({
   });
   
   mm.init();
+
+let myDiv = document.getElementById('myDiv');
+let mySound = document.getElementById('mySound');
+
+myDiv.addEventListener('mouseover', function () {
+    mySound.play();
+});
+
+myDiv.addEventListener('mouseout', function () {
+    mySound.pause();
+    mySound.currentTime = 0; // This resets the sound
+});
