@@ -9,6 +9,7 @@
 .view1 {
   background-color: #121212;
   height: 110vh;
+  width: auto;
   display: flex;
   flex-direction: column;
 }
