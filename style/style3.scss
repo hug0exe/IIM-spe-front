@@ -200,6 +200,7 @@ h1{
       width: 18vw;
       border-radius: 12px;
       list-style: none;
+      font-family: 'HKGroteskWide', sans-serif;
       // transition: 0.6s;
       // &:hover {
       //   background: $white;
@@ -223,7 +224,7 @@ h1{
   .title {
     font-size: 56px;
   }
-  .summary-items-container {
+  #summary-items-container {
     width: 68vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
