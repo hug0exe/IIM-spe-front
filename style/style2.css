@@ -1,5 +1,5 @@
 body {
-  background-color: #CEE2C7 !important;
+  background-color: black !important;
 }
 
 .partH h1 {
@@ -7,7 +7,7 @@ body {
 }
 .partH p {
   font-size: 14px;
-  color: #328D2A;
+  color: white;
   font-weight: 100;
 }
 .partH ul {
@@ -16,18 +16,19 @@ body {
 }
 .partH ul li {
   list-style-type: none;
-  color: #328D2A;
+  color: white;
   font-weight: 100;
 }
 .partH .bigLine {
   position: absolute;
   border-radius: 18px;
-  border-left: 1px solid #328D2A;
-  border-top: 1px solid #328D2A;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
   width: 1140px !important;
   height: 560px;
   top: 70px;
   left: 60px;
+  z-index: -100;
   width: 40px;
 }
 .partH .section2 {
@@ -38,7 +39,7 @@ body {
 }
 .partH .section2 h2 {
   text-align: right;
-  color: #328D2A;
+  color: white;
   margin-right: 22px;
   font-weight: 900;
 }
@@ -53,7 +54,7 @@ body {
   text-align: right;
   font-size: 22px !important;
   font-weight: 400;
-  color: #328D2A;
+  color: white;
   text-transform: lowercase;
 }
 .partH .section2 .lineSection3 {
@@ -62,10 +63,10 @@ body {
   height: 1px;
   justify-content: end;
   margin-top: -23px;
-  background: #328D2A;
+  background: white;
 }
 .partH h3, .partH h2, .partH h1 {
-  color: #328D2A !important;
+  color: white !important;
 }
 .partH h2 {
   text-transform: uppercase;
@@ -78,7 +79,7 @@ body {
   width: 70%;
   height: 1px;
   margin-top: -43px;
-  background: #328D2A;
+  background: white;
 }
 .partH .section3 h2 {
   font-weight: 900;
@@ -93,7 +94,7 @@ body {
   margin-bottom: 20px;
 }
 .partH .border-left {
-  border-right: 1px solid #328D2A;
+  border-right: 1px solid white;
   padding-right: 40px !important;
 }
 .partH img {

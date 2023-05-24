@@ -276,3 +276,11 @@ h1{
     }
   }
 }
+
+
+.magnet {
+  display: inline-block;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transition: all .5s ease;
+}

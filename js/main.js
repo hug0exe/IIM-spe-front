@@ -260,3 +260,13 @@
 
 // // Render app
 // ReactDOM.render(<App />, document.getElementById("app"));
+
+
+let mm = new MagnetMouse({
+    magnet: {
+      element: '.magnet'
+    },
+    throttle: 10,
+  });
+  
+  mm.init();
