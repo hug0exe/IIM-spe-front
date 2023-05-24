@@ -1,423 +1,433 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Landing Page with GSAP Animations</title>
   <link rel="stylesheet" type="text/css" href="style/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
+
 <body>
 
-    <!-- <div class="container">
+  <!-- <div class="container">
         <h1 class="text-center">
             Je t'aime Mathis
         </h1>
     </div>
     <div id="app"></div> -->
 
-    <div id="app">
-        <div class="view1">
-            <div class="topline">
-                <p class="text1">Graphic Design</p>
-                <div class="t-line"></div>
-            </div>
-
-            <div class="mainTitle">
-                <h1>
-                    <span>POR</span>
-                    <span>TFOL</span>
-                    <span>IO</span>
-                </h1>
-
-                <div class="wrapper">
-                    <div class="border-circle" id="one"></div>
-                    <div class="border-circle" id="two"></div>
-                    <div class="background-circle">
-                      <div class="triangle-light"></div>
-                      <div class="body"></div>
-                      <span class="shirt-text">I</span>
-                      <span class="shirt-text">♥</span>
-                      <span class="shirt-text">C</span>
-                      <span class="shirt-text">S</span>
-                      <span class="shirt-text">S</span>
-                      <div class="triangle-dark"></div>
-                    </div>
-                    <div class="head">
-                      <div class="ear" id="left"></div>
-                      <div class="ear" id="right"></div>
-                      <div class="hair-main">
-                        <div class="sideburn" id="left"></div>
-                        <div class="sideburn" id="right"></div>
-                        <div class="hair-top"></div>
-                      </div>
-                      <div class="face">
-                        <div class="hair-bottom"></div>
-                        <div class="nose"></div>
-                        <div class="eye-shadow" id="left">
-                          <div class="eyebrow"></div>
-                          <div class="eye"></div>
-                        </div>
-                        <div class="eye-shadow" id="right">
-                          <div class="eyebrow"></div>
-                          <div class="eye"></div>
-                        </div>
-                        <div class="mouth"></div>
-                        <div class="shadow-wrapper">
-                          <div class="shadow"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <span class="music-note" id="one">&#9835;</span>
-                    <span class="music-note" id="two">&#9834;</span>
-                  </div>
-            </div>
-
-            
-            <div class="bottomline">
-                <div class="b-line"></div>
-                <p class="text2">Robert Legend</p>
-            </div>
-        </div>
-
-        <div class="partH">
-          <div class="bigLine"></div>
-          <div class="bg">
-              <section class="container position-relative">
-                  <h1 class="text-right pt-5">
-                      HOLA
-                  </h1>
-                  <div class="row">
-                      <div class="col-md-4">
-                          <div class="magnet">
-                              <img class="img-fluid" src="img/pp.jpg" alt="">
-                          </div>
-                      </div>
-                      <div class="col-md-8">
-                          <div class="row justify-content-end">
-                              <div class="col-md-8 magnet">
-                                  <p class="text-right">
-                                      Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur
-                                  </p>
-                                  <p class="text-right">
-                                      Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du 
-                                  </p>
-                              </div>
-                          </div>
-                          <div class="row section2 mt-4 justify-content-end">
-                              <span class="lineSection3 magnet"></span>
-                              <div class="col-md-4 border-left magnet">
-                                  <h2>
-                                      Idiomas
-                                  </h2>
-                                  <ul class="mt-4">
-                                      <li>
-                                          <p>
-                                              Espagnol
-                                          </p>
-                                      </li>
-                                      <li>
-                                          <p>
-                                              Francais
-                                          </p>
-                                      </li>
-                                  </ul>
-                              </div>
-                              <div class="col-md-4 magnet">
-                                  <h3 class="mt-5">
-                                      Licence de ma mere
-                                  </h3>
-                                  <ul>
-                                      <li>
-                                          <p>
-                                              Université de sevran bedotte la grosse zone
-                                          </p>
-                                      </li>
-                                  </ul>
-                              </div>
-                              <div class="col-md-4 magnet">
-                                  <h2 class="mb-4">
-                                      Education
-                                  </h2>
-                                  <h3>
-                                      Baccalaureat ou les petits
-                                  </h3>
-                                  <ul>
-                                      <li>
-                                          <p>
-                                              Collège de la banane tah moha la squale
-                                          </p>
-                                      </li>
-                                  </ul>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="section3">
-                          <div class="row mt-5 justify-content-end">
-                              <span class="lineSection3 magnet"></span>
-                              <div class="contact ">
-                                  <div class="col-md-3 box magnet">
-                                      <h3>
-                                          Contacto
-                                      </h3>
-                                      <div class="reseaux">
-                                          <ul>
-                                              <li>
-                                                  <i></i>
-                                                  <p>hugop2142@gmail.com</p>
-                                              </li>
-                                              <li>
-                                                  <i></i>
-                                                  <p>uggobelin</p>
-                                              </li>
-                                              <li>
-                                                  <i></i>
-                                                  <p>hprrn</p>
-                                              </li>
-                                          </ul>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col-md-3 border-left magnet">
-                                  <h2>
-                                      Software
-                                  </h2>
-                                  <ul>
-                                      <li>HTML</li>
-                                      <li>SCSS</li>
-                                      <li>JS</li>
-                                      <li>PHP</li>
-                                      <li>REACT</li>
-                                  </ul>
-                              </div>
-                              <div class="col-md-2 border-left ml-5 magnet">
-                                  <h2>    
-                                      Skills
-                                  </h2>
-                                  <ul>
-                                      <li>Travail d'équipe</li>
-                                      <li>Fuck les softs skills</li>
-                                      <li>Determination</li>
-                                      <li>A la cool</li>
-                                      <li>ca dit quoi</li>
-                                  </ul>
-                              </div>
-                              <div class="col-md-3 ml-5 magnet">
-                                  <h2>
-                                      Experience
-                                  </h2>
-                                  <div class="row">
-                                      <div class="col-md-6">
-                                          <ul>
-                                              <li>
-                                                  <h4>
-                                                      Sami
-                                                  </h4>
-                                                  <p>
-                                                      Branding / RSS
-                                                  </p>
-                                                  <p class="date">
-                                                      2021
-                                                  </p>
-                                              </li>
-                                              <li>
-                                                  <h4>
-                                                      Sami
-                                                  </h4>
-                                                  <p>
-                                                      Branding / RSS
-                                                  </p>
-                                                  <p class="date">
-                                                      2021
-                                                  </p>
-                                              </li>
-                                          </ul>
-                                      </div>
-                                      <div class="col-md-6 magnet">
-                                          <ul>
-                                              <li>
-                                                  <h4>
-                                                      Sami
-                                                  </h4>
-                                                  <p>
-                                                      Branding / RSS
-                                                  </p>
-                                                  <p class="date">
-                                                      2021
-                                                  </p>
-                                              </li>
-                                              <li>
-                                                  <h4>
-                                                      Sami
-                                                  </h4>
-                                                  <p>
-                                                      Branding / RSS
-                                                  </p>
-                                                  <p class="date">
-                                                      2021
-                                                  </p>
-                                              </li>
-                                          </ul>
-                                      </div>
-                                  </div>
-                              </div>
-                              
-                          </div>
-                      </div>
-                  </div>
-              </section>
-          </div>
+  <div id="app">
+    <div class="view1 cursor-scale small">
+      <div class="topline">
+        <p class="text1">Graphic Design</p>
+        <div class="t-line"></div>
       </div>
 
-      <div class="page-three">
-        <div class="left-side">
-          <h1 class="title cursor-scale">CONTENU</h1>
-          <div class="letter-image" id="myDiv">
-            <audio id="mySound" src="./music/cartoon-scream-1-6835.mp3" preload="auto"></audio>
-            <button class="animated-mail">
-              <div class="back-fold"></div>
-              <div class="letter">
-                <div class="letter-border"></div>
-                <div class="letter-title"></div>
-                <div class="letter-context"></div>
-                <div class="contact">Contact us</div>
-                <div class="letter-stamp">
-                  <div class="letter-stamp-inner"></div>
-                </div>
+      <div class="mainTitle">
+        <h1>
+          <span>POR</span>
+          <span>TFOL</span>
+          <span>IO</span>
+        </h1>
+
+        <div class="wrapper">
+          <div class="border-circle" id="one"></div>
+          <div class="border-circle" id="two"></div>
+          <div class="background-circle">
+            <div class="triangle-light"></div>
+            <div class="body"></div>
+            <span class="shirt-text">I</span>
+            <span class="shirt-text">♥</span>
+            <span class="shirt-text">C</span>
+            <span class="shirt-text">S</span>
+            <span class="shirt-text">S</span>
+            <div class="triangle-dark"></div>
+          </div>
+          <div class="head">
+            <div class="ear" id="left"></div>
+            <div class="ear" id="right"></div>
+            <div class="hair-main">
+              <div class="sideburn" id="left"></div>
+              <div class="sideburn" id="right"></div>
+              <div class="hair-top"></div>
+            </div>
+            <div class="face">
+              <div class="hair-bottom"></div>
+              <div class="nose"></div>
+              <div class="eye-shadow" id="left">
+                <div class="eyebrow"></div>
+                <div class="eye"></div>
               </div>
-              <div class="top-fold"></div>
-              <div class="body"></div>
-              <div class="left-fold"></div>
-            </button>
+              <div class="eye-shadow" id="right">
+                <div class="eyebrow"></div>
+                <div class="eye"></div>
+              </div>
+              <div class="mouth"></div>
+              <div class="shadow-wrapper">
+                <div class="shadow"></div>
+              </div>
+            </div>
           </div>
-  
-          <ul class="magnet">
-            <li><i class="fa-solid fa-wand-magic-sparkles"></i>projet academique</li>
-            <li><i class="fa-solid fa-wand-magic-sparkles"></i>projet personnel</li>
-            <li><i class="fa-solid fa-wand-magic-sparkles"></i>projet professionel</li>
-          </ul>
-        </div>
-        <div class="summary-items-container">
-          <div class="summary-item cursor-scale small ">
-            <h4>01.</h4>
-            <h3>Diseno <br />Editorial</h3>
-            <p>rediseno de libro <br />folleto</p>
-          </div>
-          <div class="summary-item cursor-scale small ">
-            <h4>02.</h4>
-            <h3>Diseno <br />Editorial</h3>
-            <p>rediseno de libro <br />folleto</p>
-          </div>
-          <div class="summary-item cursor-scale small ">
-            <h4>03.</h4>
-            <h3>Social <br />Media</h3>
-            <p>
-              agroquibor <br />nimu <br />
-              grafisicion
-            </p>
-          </div>
-          <div class="summary-item cursor-scale small ">
-            <h4>04.</h4>
-            <h3>Diseno <br />Editorial</h3>
-            <p>rediseno de libro <br />folleto</p>
-          </div>
-          <div class="summary-item cursor-scale small ">
-            <h4>05.</h4>
-            <h3>Diseno <br />Editorial</h3>
-            <p>rediseno de libro <br />folleto</p>
-          </div>
+          <span class="music-note" id="one">&#9835;</span>
+          <span class="music-note" id="two">&#9834;</span>
         </div>
       </div>
-      <div class="cursor"></div>
+
+
+      <div class="bottomline">
+        <div class="b-line"></div>
+        <p class="text2">Robert Legend</p>
+      </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/gh/fluffy-factory/magnet-mouse@latest/lib/magnet-mouse.min.js"></script>
-    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-    <script src="js/main.js"></script>
+    <div class="partH cursor-scale small">
+      <div class="bigLine"></div>
+      <div class="bg">
+        <section class="container position-relative">
+          <h1 class="text-right pt-5">
+            HOLA
+          </h1>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="magnet">
+                <img class="img-fluid" src="img/pp.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="row justify-content-end">
+                <div class="col-md-8 magnet">
+                  <p class="text-right">
+                    Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant
+                    impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand
+                    un imprimeur
+                  </p>
+                  <p class="text-right">
+                    Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique,
+                    sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de
+                    feuilles Letraset contenant des passages du
+                  </p>
+                </div>
+              </div>
+              <div class="row section2 mt-4 justify-content-end">
+                <span class="lineSection3 magnet"></span>
+                <div class="col-md-4 border-left magnet">
+                  <h2>
+                    Idiomas
+                  </h2>
+                  <ul class="mt-4">
+                    <li>
+                      <p>
+                        Espagnol
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Francais
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4 magnet">
+                  <h3 class="mt-5">
+                    Licence de ma mere
+                  </h3>
+                  <ul>
+                    <li>
+                      <p>
+                        Université de sevran bedotte la grosse zone
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4 magnet">
+                  <h2 class="mb-4">
+                    Education
+                  </h2>
+                  <h3>
+                    Baccalaureat ou les petits
+                  </h3>
+                  <ul>
+                    <li>
+                      <p>
+                        Collège de la banane tah moha la squale
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="section3">
+              <div class="row mt-5 justify-content-end">
+                <span class="lineSection3 magnet"></span>
+                <div class="contact ">
+                  <div class="col-md-3 box magnet">
+                    <h3>
+                      Contacto
+                    </h3>
+                    <div class="reseaux">
+                      <ul>
+                        <li>
+                          <i></i>
+                          <p>hugop2142@gmail.com</p>
+                        </li>
+                        <li>
+                          <i></i>
+                          <p>uggobelin</p>
+                        </li>
+                        <li>
+                          <i></i>
+                          <p>hprrn</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 border-left magnet">
+                  <h2>
+                    Software
+                  </h2>
+                  <ul>
+                    <li>HTML</li>
+                    <li>SCSS</li>
+                    <li>JS</li>
+                    <li>PHP</li>
+                    <li>REACT</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 border-left ml-5 magnet">
+                  <h2>
+                    Skills
+                  </h2>
+                  <ul>
+                    <li>Travail d'équipe</li>
+                    <li>Fuck les softs skills</li>
+                    <li>Determination</li>
+                    <li>A la cool</li>
+                    <li>ca dit quoi</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 ml-5 magnet">
+                  <h2>
+                    Experience
+                  </h2>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <ul>
+                        <li>
+                          <h4>
+                            Sami
+                          </h4>
+                          <p>
+                            Branding / RSS
+                          </p>
+                          <p class="date">
+                            2021
+                          </p>
+                        </li>
+                        <li>
+                          <h4>
+                            Sami
+                          </h4>
+                          <p>
+                            Branding / RSS
+                          </p>
+                          <p class="date">
+                            2021
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6 magnet">
+                      <ul>
+                        <li>
+                          <h4>
+                            Sami
+                          </h4>
+                          <p>
+                            Branding / RSS
+                          </p>
+                          <p class="date">
+                            2021
+                          </p>
+                        </li>
+                        <li>
+                          <h4>
+                            Sami
+                          </h4>
+                          <p>
+                            Branding / RSS
+                          </p>
+                          <p class="date">
+                            2021
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
 
-    <script>
-      let myDiv = document.getElementById('myDiv');
-      let mySound = document.getElementById('mySound');
-  
-      myDiv.addEventListener('mouseover', function() {
-          mySound.play();
-      });
-  
-      myDiv.addEventListener('mouseout', function() {
-          mySound.pause();
-          mySound.currentTime = 0; // This resets the sound
-      });
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="page-three">
+      <div class="left-side">
+        <h1 class="title cursor-scale">CONTENU</h1>
+        <div class="letter-image" id="myDiv">
+          <audio id="mySound" src="./music/cartoon-scream-1-6835.mp3" preload="auto"></audio>
+          <button class="animated-mail">
+            <div class="back-fold"></div>
+            <div class="letter">
+              <div class="letter-border"></div>
+              <div class="letter-title"></div>
+              <div class="letter-context"></div>
+              <div class="contact">Contact us</div>
+              <div class="letter-stamp">
+                <div class="letter-stamp-inner"></div>
+              </div>
+            </div>
+            <div class="top-fold"></div>
+            <div class="bodyletter"></div>
+            <div class="left-fold"></div>
+          </button>
+        </div>
+
+        <ul class="magnet">
+          <li><i class="fa-solid fa-wand-magic-sparkles"></i>projet academique</li>
+          <li><i class="fa-solid fa-wand-magic-sparkles"></i>projet personnel</li>
+          <li><i class="fa-solid fa-wand-magic-sparkles"></i>projet professionel</li>
+        </ul>
+      </div>
+      <div class="summary-items-container">
+        <div class="summary-item cursor-scale small ">
+          <h4>01.</h4>
+          <h3>Diseno <br />Editorial</h3>
+          <p>rediseno de libro <br />folleto</p>
+        </div>
+        <div class="summary-item cursor-scale small ">
+          <h4>02.</h4>
+          <h3>Diseno <br />Editorial</h3>
+          <p>rediseno de libro <br />folleto</p>
+        </div>
+        <div class="summary-item cursor-scale small ">
+          <h4>03.</h4>
+          <h3>Social <br />Media</h3>
+          <p>
+            agroquibor <br />nimu <br />
+            grafisicion
+          </p>
+        </div>
+        <div class="summary-item cursor-scale small ">
+          <h4>04.</h4>
+          <h3>Diseno <br />Editorial</h3>
+          <p>rediseno de libro <br />folleto</p>
+        </div>
+        <div class="summary-item cursor-scale small ">
+          <h4>05.</h4>
+          <h3>Diseno <br />Editorial</h3>
+          <p>rediseno de libro <br />folleto</p>
+        </div>
+      </div>
+    </div>
+    <div class="cursor"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/gh/fluffy-factory/magnet-mouse@latest/lib/magnet-mouse.min.js"></script>
+  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    let myDiv = document.getElementById('myDiv');
+    let mySound = document.getElementById('mySound');
+
+    myDiv.addEventListener('mouseover', function () {
+      mySound.play();
+    });
+
+    myDiv.addEventListener('mouseout', function () {
+      mySound.pause();
+      mySound.currentTime = 0; // This resets the sound
+    });
   </script>
-    <script>
-      let cursor = document.querySelector(".cursor");
-      let cursorScale = document.querySelectorAll(".cursor-scale");
-      let mouseX = 0;
-      let mouseY = 0;
+  <script>
+    let cursor = document.querySelector(".cursor");
+    let cursorScale = document.querySelectorAll(".cursor-scale");
+    let mouseX = 0;
+    let mouseY = 0;
 
-      gsap.to({}, 0.016, {
-        repeat: -1,
-        onRepeat: function () {
-          gsap.set(cursor, {
-            css: {
-              left: mouseX,
-              top: mouseY,
-            },
-          });
-        },
-      });
-
-      window.addEventListener("mousemove", (e) => {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
-      });
-      cursorScale.forEach((link) => {
-        link.addEventListener("mousemove", () => {
-          cursor.classList.add("grow");
-          if (link.classList.contains("small")) {
-            cursor.classList.remove("grow");
-            cursor.classList.add("grow-small");
-          }
+    gsap.to({}, 0.016, {
+      repeat: -1,
+      onRepeat: function () {
+        gsap.set(cursor, {
+          css: {
+            left: mouseX,
+            top: mouseY,
+          },
         });
+      },
+    });
 
-        link.addEventListener("mouseleave", () => {
+    window.addEventListener("mousemove", (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+    cursorScale.forEach((link) => {
+      link.addEventListener("mousemove", () => {
+        cursor.classList.add("grow");
+        if (link.classList.contains("small")) {
           cursor.classList.remove("grow");
-          cursor.classList.remove("grow-small");
-        });
+          cursor.classList.add("grow-small");
+        }
       });
 
-      var tl = gsap.timeline();
-      tl.from(document.querySelector(".summary-item:nth-child(1)"), {
+      link.addEventListener("mouseleave", () => {
+        cursor.classList.remove("grow");
+        cursor.classList.remove("grow-small");
+      });
+    });
+
+    var tl = gsap.timeline();
+    tl.from(document.querySelector(".summary-item:nth-child(1)"), {
         y: 100,
         opacity: 0,
         duration: 0.8,
       })
-        .from(document.querySelector(".summary-item:nth-child(2)"), {
-          y: 100,
-          opacity: 0,
-          duration: 0.8,
-        })
-        .from(document.querySelector(".summary-item:nth-child(3)"), {
-          y: 100,
-          opacity: 0,
-          duration: 0.8,
-        })
-        .from(document.querySelector(".summary-item:nth-child(4)"), {
-          y: 100,
-          opacity: 0,
-          duration: 0.8,
-        })
-        .from(document.querySelector(".summary-item:nth-child(5)"), {
-          y: 100,
-          opacity: 0,
-          duration: 0.8,
-        })
-        .from(document.querySelector(".letter-image"), {
-          x: -100,
-          opacity: 0,
-          duration: 0.8,
-        });
-    </script>
+      .from(document.querySelector(".summary-item:nth-child(2)"), {
+        y: 100,
+        opacity: 0,
+        duration: 0.8,
+      })
+      .from(document.querySelector(".summary-item:nth-child(3)"), {
+        y: 100,
+        opacity: 0,
+        duration: 0.8,
+      })
+      .from(document.querySelector(".summary-item:nth-child(4)"), {
+        y: 100,
+        opacity: 0,
+        duration: 0.8,
+      })
+      .from(document.querySelector(".summary-item:nth-child(5)"), {
+        y: 100,
+        opacity: 0,
+        duration: 0.8,
+      })
+      .from(document.querySelector(".letter-image"), {
+        x: -100,
+        opacity: 0,
+        duration: 0.8,
+      });
+  </script>
 </body>
+
 </html>
