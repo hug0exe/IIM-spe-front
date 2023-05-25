@@ -1067,7 +1067,8 @@ h1 {
   z-index: 0;
 }
 .page-three .left-side .letter-image:hover .animated-mail .letter {
-  height: 980px;
+  height: -moz-min-content;
+  height: min-content;
 }
 .page-three .left-side .contact-button {
   position: absolute;

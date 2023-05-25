@@ -1506,7 +1506,7 @@ h1 {
       }
 
       .animated-mail .letter {
-        height: 980px;
+        height: min-content;
       }
     }
     .contact-button {
