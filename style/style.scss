@@ -1653,7 +1653,7 @@ h1 {
   object-fit: contain;
   width: 100%;
   height: 100%;
-  transform: translate(-150%, 25%) scale(7.1);
+  transform: translate(-50%, 0%) scale(6);
   position: relative;
   z-index: -1;
 }
@@ -1665,7 +1665,8 @@ h1 {
 .character-card:hover > .hover-container {
   transform: scaleY(1.2);
   background-image: initial;
-  background-color: #b255c596;
+  background-color: $fontcolor;
+  opacity: 0.8;
   z-index: 2;
   cursor: pointer;
 }
@@ -1790,7 +1791,7 @@ h1 {
 }
 
 .musicTitle {
-  float: right;
+  text-align: center;
   margin: 50px 50px 50px 0;
   font-family: "HKGroteskWide", sans-serif;
   font-size: 56px;
