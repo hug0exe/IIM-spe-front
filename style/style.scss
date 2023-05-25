@@ -1220,7 +1220,7 @@ body {
       font-size: 22px !important;
       font-weight: 400;
       color: $fontcolor;
-      text-transform: lowercase;
+      text-transform: initial;
     }
     .lineSection3 {
       position: absolute;
@@ -1506,7 +1506,7 @@ h1 {
       }
 
       .animated-mail .letter {
-        height: 980px;
+        height: min-content;
       }
     }
     .contact-button {

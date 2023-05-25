@@ -819,7 +819,7 @@ body {
   font-size: 22px !important;
   font-weight: 400;
   color: #cee2c7;
-  text-transform: lowercase;
+  text-transform: initial;
 }
 .partH .section2 .lineSection3 {
   position: absolute;
@@ -1067,7 +1067,8 @@ h1 {
   z-index: 0;
 }
 .page-three .left-side .letter-image:hover .animated-mail .letter {
-  height: 980px;
+  height: -moz-min-content;
+  height: min-content;
 }
 .page-three .left-side .contact-button {
   position: absolute;
