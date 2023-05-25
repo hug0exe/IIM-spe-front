@@ -1800,9 +1800,15 @@ h1 {
 // WAVE
 
 // WAVE
+canvas {
+  display: none;
+  background: transparent !important;
+  position: fixed;
+  bottom: 0;
+}
 
-.section3{
-  .col-md-2{
+.section3 {
+  .col-md-2 {
     flex: 19.666667%;
   }
 }

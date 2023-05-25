@@ -1353,6 +1353,13 @@ h1 {
   color: #fff;
 }
 
+canvas {
+  display: none;
+  background: transparent !important;
+  position: fixed;
+  bottom: 0;
+}
+
 .section3 .col-md-2 {
   flex: 19.666667%;
 }/*# sourceMappingURL=style.css.map */
