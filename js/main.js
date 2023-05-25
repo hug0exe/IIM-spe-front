@@ -12297,8 +12297,8 @@ let isPlaying = false;
 const PARAMS = {
   min_threshold: 0.15,
   multiplier: 10,
-  max_size: 40,
-  speed: 1,
+  max_size: 90,
+  speed: 1.5,
 };
 
 if (window.addEventListener) {
@@ -12314,7 +12314,7 @@ if (window.addEventListener) {
         start();
         setTimeout(() => {
           stop();
-        }, 15000);
+        }, 20000);
 
         keys = [];
       }
