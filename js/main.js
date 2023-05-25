@@ -278,17 +278,18 @@ myDiv.addEventListener("mouseout", function () {
   mySound.pause();
   mySound.currentTime = 0; // This resets the sound
 });
-let myDiv2 = document.getElementById("myDiv2");
-let mySound2 = document.getElementById("mySound2");
 
-myDiv2.addEventListener("mouseover", function () {
-  mySound2.play();
-});
+// let myDiv2 = document.getElementById("myDiv2");
+// let mySound2 = document.getElementById("mySound2");
 
-myDiv2.addEventListener("mouseout", function () {
-  mySound2.pause();
-  mySound2.currentTime = 0; // This resets the sound
-});
+// myDiv2.addEventListener("mouseover", function () {
+//   mySound2.play();
+// });
+
+// myDiv2.addEventListener("mouseout", function () {
+//   mySound2.pause();
+//   mySound2.currentTime = 0; // This resets the sound
+// });
 let myDiv3 = document.getElementById("myDiv3");
 let mySound3 = document.getElementById("mySound3");
 
@@ -299,6 +300,70 @@ myDiv3.addEventListener("mouseover", function () {
 myDiv3.addEventListener("mouseout", function () {
   mySound3.pause();
   mySound3.currentTime = 0; // This resets the sound
+});
+
+let myDiv4 = document.getElementById("myDiv4");
+let mySound4 = document.getElementById("mySound4");
+
+myDiv4.addEventListener("mouseover", function () {
+  mySound4.play();
+});
+
+myDiv4.addEventListener("mouseout", function () {
+  mySound4.pause();
+  mySound4.currentTime = 0; // This resets the sound
+});
+
+
+let myDiv5 = document.getElementById("myDiv5");
+let mySound5 = document.getElementById("mySound5");
+
+myDiv5.addEventListener("mouseover", function () {
+  mySound5.play();
+});
+
+myDiv5.addEventListener("mouseout", function () {
+  mySound5.pause();
+  mySound5.currentTime = 0; // This resets the sound
+});
+
+
+let myDiv6 = document.getElementById("myDiv6");
+let mySound6 = document.getElementById("mySound6");
+
+myDiv6.addEventListener("mouseover", function () {
+  mySound6.play();
+});
+
+myDiv6.addEventListener("mouseout", function () {
+  mySound6.pause();
+  mySound6.currentTime = 0; // This resets the sound
+});
+
+
+let myDiv7 = document.getElementById("myDiv7");
+let mySound7 = document.getElementById("mySound7");
+
+myDiv7.addEventListener("mouseover", function () {
+  mySound7.play();
+});
+
+myDiv7.addEventListener("mouseout", function () {
+  mySound7.pause();
+  mySound7.currentTime = 0; // This resets the sound
+});
+
+
+let myDiv8 = document.getElementById("myDiv8");
+let mySound8 = document.getElementById("mySound8");
+
+myDiv8.addEventListener("mouseover", function () {
+  mySound8.play();
+});
+
+myDiv8.addEventListener("mouseout", function () {
+  mySound8.pause();
+  mySound8.currentTime = 0; // This resets the sound
 });
 
 /*!
