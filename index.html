@@ -17,6 +17,7 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
   <body>
@@ -405,45 +406,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="https://rawgit.com/WeiChiaChang/Easter-egg/master/easter-eggs-collection.js"></script>
-
     <script src="js/main.js"></script>
     <script type="text/babel" src="js/wave.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tweakpane@3.1.9/dist/tweakpane.min.js"></script>
 
     <script>
-      //konami code
-      if (window.addEventListener) {
-        var keys = [],
-          konami = "38,38,40,40,37,39,37,39,66,65";
+      let myDiv1 = document.getElementById("myDiv");
+      let mySound1 = document.getElementById("mySound");
 
-        window.addEventListener(
-          "keydown",
-          function (e) {
-            keys.push(e.keyCode);
-
-            if (keys.toString().indexOf(konami) >= 0) {
-              alert("This is where the magic would happen");
-
-              keys = [];
-            }
-          },
-          true
-        );
-      }
-
-      //cursor
-      let myDiv = document.getElementById("myDiv");
-      let mySound = document.getElementById("mySound");
-
-      myDiv.addEventListener("mouseover", function () {
-        mySound.play();
+      myDiv1.addEventListener("mouseover", function () {
+        mySound1.play();
       });
 
-      myDiv.addEventListener("mouseout", function () {
-        mySound.pause();
-        mySound.currentTime = 0; // This resets the sound
+      myDiv1.addEventListener("mouseout", function () {
+        mySound1.pause();
+        mySound1.currentTime = 0; // This resets the sound
       });
     </script>
     <script>
+      //cursor
       let cursor = document.querySelector(".cursor");
       let cursorScale = document.querySelectorAll(".cursor-scale");
       let mouseX = 0;
@@ -543,27 +524,27 @@
       tl.from(document.querySelector(".summary-item:nth-child(1)"), {
         y: 100,
         opacity: 0,
-        duration: 0.8,
+        duration: 0.4,
       })
         .from(document.querySelector(".summary-item:nth-child(2)"), {
           y: 100,
           opacity: 0,
-          duration: 0.8,
+          duration: 0.4,
         })
         .from(document.querySelector(".summary-item:nth-child(3)"), {
           y: 100,
           opacity: 0,
-          duration: 0.8,
+          duration: 0.4,
         })
         .from(document.querySelector(".summary-item:nth-child(4)"), {
           y: 100,
           opacity: 0,
-          duration: 0.8,
+          duration: 0.4,
         })
         .from(document.querySelector(".summary-item:nth-child(5)"), {
           y: 100,
           opacity: 0,
-          duration: 0.8,
+          duration: 0.2,
         })
         .from(document.querySelector(".letter-image"), {
           x: -100,
