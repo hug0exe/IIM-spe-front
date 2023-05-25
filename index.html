@@ -641,6 +641,19 @@
           opacity: 0,
           duration: 0.8,
         });
+
+        // Select the sliding div
+        const slideDiv = document.querySelector('.wrapper');
+
+        // Use GSAP to animate the slideDiv
+        gsap.to(slideDiv, {
+          opacity: 1,
+          y: '40%',
+          duration: 3,
+          ease: 'power2.out',
+          delay: 0.5
+        });
+
     </script>
   </body>
 </html>

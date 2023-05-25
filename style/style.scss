@@ -1825,6 +1825,9 @@ $interval: 200ms;
 $color-gray: #EAEBEC;
 $easing: ease-in-out;
 
+opacity: 0;
+transform: translateY(-100%);
+
 .ball {
   width: 32px;
   height: 32px;
