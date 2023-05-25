@@ -1323,6 +1323,7 @@ body {
   .contact {
     .box {
       margin-top: -60px;
+      padding-left: 60px;
     }
     display: contents;
     h3 {
@@ -1799,3 +1800,9 @@ h1 {
 // WAVE
 
 // WAVE
+
+.section3{
+  .col-md-2{
+    flex: 19.666667%;
+  }
+}

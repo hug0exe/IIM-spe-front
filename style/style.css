@@ -905,6 +905,7 @@ body {
 }
 .partH .contact .box {
   margin-top: -60px;
+  padding-left: 60px;
 }
 .partH .contact h3 {
   font-weight: 900;
@@ -1350,4 +1351,8 @@ h1 {
   font-family: "HKGroteskWide", sans-serif;
   font-size: 56px;
   color: #fff;
+}
+
+.section3 .col-md-2 {
+  flex: 19.666667%;
 }/*# sourceMappingURL=style.css.map */
