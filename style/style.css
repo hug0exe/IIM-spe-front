@@ -819,7 +819,7 @@ body {
   font-size: 22px !important;
   font-weight: 400;
   color: #cee2c7;
-  text-transform: lowercase;
+  text-transform: initial;
 }
 .partH .section2 .lineSection3 {
   position: absolute;
